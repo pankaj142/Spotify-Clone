@@ -68,30 +68,9 @@ body{
     background-repeat: no-repeat;
 }
 
-.bottom {
-    position: sticky;
-    bottom: 0;
-    color: white;
-    height: 130px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.bottom .icons{
-    margin: 14px 0px;
-    
-}
-
-.icons i{
-    cursor: pointer;
-}
-
 .songList{
     /* background-color: blue; */
-    width: 50%;
+    /* width: 50%; */
 }
 
 .songItem{
@@ -116,12 +95,52 @@ body{
     margin: 0 23px;
 }
 
-.songBanner{
-    /* background-color: violet; */
-    width: 50%;
+.timestamp i{
+    cursor: pointer;
 }
 
+.songItemContainer{
+    /* border: 2px solid red; */
+    margin-top: 74px;
+}
+
+.songBanner{
+    /* background-color: violet; */
+    /* width: 50%; */
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .icons{
+    margin: 14px 0px;
+}
+
+.icons i{
+    cursor: pointer;
+}
 
 .bottom #myProgressBar{
     width: 90vw;
+}
+
+.songInfo {
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 5vw;
+}
+
+.songInfo img{
+    width: 43px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
