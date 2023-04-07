@@ -1,0 +1,128 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    background-color:antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+    background-color: rgb(40, 37, 37);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+.navbar ul li{
+    /* border: 1px solid red; */
+    /* background-color: blueviolet; */
+    padding: 0px 10px;
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+    /* margin: auto 2px; */
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.navbar .brand img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.brand span {
+    margin: auto 8px;
+    cursor: pointer;
+}
+
+.navbar ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    min-height: 73vh;
+    background-color: black;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("/assets//images/music_listen_large-3086302_1920_new.jpg");
+    background-repeat: no-repeat;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    color: white;
+    height: 130px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .icons{
+    margin: 14px 0px;
+    
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.songList{
+    /* background-color: blue; */
+    width: 50%;
+}
+
+.songItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 80%;
+    margin: 10px 0px;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.songBanner{
+    /* background-color: violet; */
+    width: 50%;
+}
+
+
+.bottom #myProgressBar{
+    width: 90vw;
+}
