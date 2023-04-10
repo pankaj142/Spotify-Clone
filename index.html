@@ -128,15 +128,15 @@
     </div>
 
     <div class="bottom">
-      <input type="range" name="range" id="myProgressBar" min="0" max="100" />
+      <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0"/>
       <div class="icons">
         <!-- font awesome icons -->
         <i class="fas fa-3x fa-backward-step"></i>
-        <i class="far fa-3x fa-circle-play"></i>
+        <i class="far fa-3x fa-circle-play" id="masterPlay"></i>
         <i class="fas fa-3x fa-forward-step"></i>
       </div>
       <div class="songInfo">
-        <img src="/assets/images/music_playing_3.gif" alt="playing music gif">
+        <img src="/assets/images/music_playing_3.gif" id="playingGif" alt="playing music gif">
         <span>Let's play sound - Albert Kumar</span>
       </div>
     </div>
@@ -146,5 +146,6 @@
       src="https://kit.fontawesome.com/e0d6658fc1.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
