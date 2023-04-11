@@ -124,11 +124,20 @@ myProgressBar.addEventListener("change", () => {
 audioElement.addEventListener("ended", () => {
   console.log("song end");
 
-  // change master play icon to play
-  changeButtonIcon("masterPlay", "play")
-  
-  // hide playing gif
-  playingGif.style.opacity = 0;
+    if(songIndex <9){
+        songIndex++;
+    }else{
+        songIndex = 1;
+    }
+
+    playAudioElement(songIndex)
+
+    // master song name updated
+    updateMasterSongName(songIndex);
+
+    // change master play icon to pause
+    changeButtonIcon("masterPlay", "pause")
+
 });
 
 
