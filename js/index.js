@@ -173,6 +173,9 @@ songPlay.forEach((element, index)=>{
             
             // change master play icon to play
             changeButtonIcon("masterPlay", "play")
+
+            // show playing gif
+            playingGif.style.opacity = 0;
         }
     })
 })
@@ -221,6 +224,9 @@ let playAudioElement = (songIndex) =>{
     audioElement.src = `/assets/audio/${songIndex}.mp3`;
     audioElement.currentTime = 0;
     audioElement.play();
+    // show playing gif
+    playingGif.style.opacity = 1;
+
 }
 
 let changeButtonIcon = (button, type, songElement) =>{
