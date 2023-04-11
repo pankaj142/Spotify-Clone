@@ -82,6 +82,7 @@ body{
     color: black;
     height: 50px;
     margin: 10px 0px;
+    padding-right: 10px;
     border-radius: 34px;
 }
 
@@ -95,7 +96,7 @@ body{
     margin: 0 23px;
 }
 
-.timestamp i{
+.songPlay {
     cursor: pointer;
 }
 
